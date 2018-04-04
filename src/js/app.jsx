@@ -13,7 +13,7 @@ export default class App extends React.Component {
         <div className='row'>
           <div className='col-12 col-md-6 mb-4'>
           <IncomeEntries />
-          
+
             <div className='card border-danger mb-3'>
               <div className='card-header text-white bg-danger'>Income Entries</div>
               <div className='card-body'> 
@@ -58,9 +58,11 @@ export default class App extends React.Component {
                   </table>
                 </form>
               </div>
+              
             </div>
           </div>
           <div className='col-12 col-md-6 mb-4'>
+           <ExpenseEntries />
             <div className='card border-danger mb-3'>
               <div className='card-header text-white bg-danger'>Expense Entries</div>
               <div className='card-body'>
@@ -110,6 +112,7 @@ export default class App extends React.Component {
         </div>
         <div className='row justify-content-center'>
           <div className='col-12 col-md-6'>
+           <Summary />
             <div className='card border-info mb-3'>
               <div className='card-header text-white bg-info'>Summary</div>
               <div className='card-body'>
@@ -133,9 +136,10 @@ export default class App extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
+         </div>
         </div>
       </div>
+    
     );
   }
 }
